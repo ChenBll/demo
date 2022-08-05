@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cssl.dao.EmpDao">
+	
+	<insert id="insert" parameterType="com.cssl.pojo.Emp">
+		insert into emp(ename,hiredate,sal,dept_no) values(#{ename},#{hiredate},#{sal},#{dept_no})
+	</insert>
+
+	<insert id="insertUser" parameterType="com.cssl.pojo.User">
+		insert into user (uname,password)
+		values (#{uname},#{password});
+	</insert>
+	
+</mapper>
