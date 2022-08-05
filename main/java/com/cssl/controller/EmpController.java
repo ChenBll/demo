@@ -12,9 +12,7 @@ import com.cssl.service.EmpService;
 public class EmpController {
 	int c=2000;
 
-	public int a(){
-		return 0;
-	}
+
 
 	@Autowired
 	private EmpService es;
